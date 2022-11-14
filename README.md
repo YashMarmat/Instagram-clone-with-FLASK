@@ -45,7 +45,7 @@ This page displays posts of only those users whom you are following.
 ### Single_post_page
 This page displays the complete details about the post (like about, liked by, comments etc.)
 <p align="center">
-  <img width="50%" height="auto" src="https://i.ibb.co/9H6PQ9b/single-post-page.png">
+  <img width="50%" height="auto" src="https://i.ibb.co/9H6PQ9b/single_post_page.png">
 </p>
 
 ### Add_Comment
