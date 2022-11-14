@@ -1,0 +1,653 @@
+{
+	"info": {
+		"_postman_id": "157ed6f9-c259-4b7c-ad87-abd3486048c5",
+		"name": "api_app (flask 2022)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14943047"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"\",\r\n    \"password\": \"\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/logout",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"\",\r\n    \"username\": \"\",\r\n    \"password\": \"\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET User by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODEwNTQ2OSwianRpIjoiOGE1Mjk1OWUtNjMxMC00ZjExLTk5ODctZjA2ZDMzZjFkNWJhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Inlhc2htYXJtYXQwNUBnbWFpbC5jb20iLCJuYmYiOjE2NjgxMDU0NjksImV4cCI6MTY2ODEwNzg2OSwidXNlcl9pZCI6MX0.br-lJ4sHyhNsLenqkKn4X0pQdYtHjoPRSziZpCXc_YM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users (as admin)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDI3MzAzOCwianRpIjoiYzZiNDY2Y2YtY2FhMS00Y2Y1LWEzZmUtZmI1Njg3YjQwYjg4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Inlhc2htYXJtYXQwNUBnbWFpbC5jb20iLCJuYmYiOjE2NjQyNzMwMzgsImV4cCI6MTY2NDI3NTQzOCwidXNlcl9pZCI6MX0.mSGCtBrQedfQLh5B2UORG0xK_5kNcaW281ED1urczmI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/all_users",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"all_users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDM2NzcyOCwianRpIjoiMTU1Y2I3YmMtZGUwMS00NmEyLWI4YjgtYjBjNTU0OTgxNWIzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Inlhc2htYXJtYXQwNUBnbWFpbC5jb20iLCJuYmYiOjE2NjQzNjc3MjgsImV4cCI6MTY2NDM3MDEyOCwidXNlcl9pZCI6MX0.zd2Ko9DtXWdxEg7x3P68-7MKjOylRH_YOvCOLDLrLz0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/user/5/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"5",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content_url\": \"\", // image url\r\n    \"body\": \"\" // post description\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}//create-post",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"",
+						"create-post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/posts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get followed users posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/followed_users_posts",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"followed_users_posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDQ2MDQ5MSwianRpIjoiM2Y0NDMyNDEtZWZlYS00MGQyLTg4MWEtYzYwMmJlY2IwZDg4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InRlc3R1c2VyMkBnbWFpbC5jb20iLCJuYmYiOjE2NjQ0NjA0OTEsImV4cCI6MTY2NDQ2Mjg5MSwidXNlcl9pZCI6M30.hefv-TnibtPBKGQp0L6Zp24ZVbxMEgPAntEtqscSjVg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"body\": \"post3 by testuser2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/edit-post/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"edit-post",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/delete-post/1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"delete-post",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Password",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"old_password\": \"\",\r\n    \"new_password\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/update_password",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"update_password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Follow a user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/follow/ym",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"follow",
+						"ym"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unfollow a user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/unfollow/ym",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"unfollow",
+						"ym"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Followers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/followers/ym",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"followers",
+						"ym"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Following to",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/following/ym",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"following",
+						"ym"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/delete_comment/1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"delete_comment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make Comment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/posts/<int:id>/make_comment",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"posts",
+						"<int:id>",
+						"make_comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send message",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NTQ3MTMxMCwianRpIjoiYTVhMTZlMDUtMzMzOS00MDFjLThjNjQtZTk3ZTE4Njg4OWRkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Inlhc2htYXJtYXQwNUBnbWFpbC5jb20iLCJuYmYiOjE2NjU0NzEzMTAsImV4cCI6MTY2NTQ3MzcxMCwidXNlcl9pZCI6MX0.tGw3NwD31eOGKplQ-Vco64X1MNI3zk7RCJXftsHC-hw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"body\": \"Hi testuser, ym this side.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/send_message/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"send_message",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "See Sent messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/sent_messages",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"sent_messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "See Received messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/received_messages",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"received_messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show conversation (needs receiver id, sender id in token)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/show_conversation/1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"show_conversation",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete message",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/delete_message/1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"delete_message",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "like a post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NzEzNTA0OCwianRpIjoiYWQ2YjhiYjktODVmMC00NTljLWJjMjktNTMxNjBkMTYyMDA5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Inlhc2htYXJtYXQwNUBnbWFpbC5jb20iLCJuYmYiOjE2NjcxMzUwNDgsImV4cCI6MTY2NzEzNzQ0OCwidXNlcl9pZCI6MX0.wT9J8FYszjbaBsj7UMLqYmXIyjFZa_H2GHZqzCqxXJM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/like_unlike/4",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"like_unlike",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Profile Image",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODEwNTQ2OSwianRpIjoiOGE1Mjk1OWUtNjMxMC00ZjExLTk5ODctZjA2ZDMzZjFkNWJhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Inlhc2htYXJtYXQwNUBnbWFpbC5jb20iLCJuYmYiOjE2NjgxMDU0NjksImV4cCI6MTY2ODEwNzg2OSwidXNlcl9pZCI6MX0.br-lJ4sHyhNsLenqkKn4X0pQdYtHjoPRSziZpCXc_YM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image_url\": \"https://media-exp1.licdn.com/dms/image/C4D03AQFd_qxF0D54Xw/profile-displayphoto-shrink_800_800/0/1661332102406?e=2147483647&v=beta&t=P5wRTPMuqJ8RYh3BHWutYrzhFs04wj9Pim0onKOjVZs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/update_image",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"update_image"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
