@@ -39,48 +39,48 @@ Checkout the site in action here <a href="https://yash-marmat-projects-instagram
 ### Home_page
 This page displays posts of only those users whom you are following.
 <p align="center">
-  <img src="https://i.ibb.co/xqsCmZK/insta-homepage.png" width="50%" height="auto">
+  <img width="50%" height="auto" src="https://i.ibb.co/xqsCmZK/insta-homepage.png">
 </p>
 
 ### Single_post_page
 This page displays the complete details about the post (like about, liked by, comments etc.)
 <p align="center">
-  <img width="400px" height="400px" src="https://github.com/YashMarmat/Pages-App-django/blob/master/templates/ecommerce%20%20product%20details%20page.png?raw=true">
+  <img width="50%" height="auto" src="https://i.ibb.co/9H6PQ9b/single-post-page.png">
 </p>
 
 ### Add_Comment
 The application is little strict about comments 😁, you need to follow the post's author in order to add comments (you can remove this feature too from the code).
 <p align="center">
-  <img src="https://github.com/YashMarmat/Pages-App-django/blob/master/templates/ecommerce%20%20product%20edit%20page.png?raw=true" width="100%">
+  <img width="50%" height="auto" src="https://i.ibb.co/sKCGn09/add-comment-page.png">
 </p>
 
 ### Explore_Page
 At this page you can see posts, made by all the signed up users in the application (global posts in short).
 <p align="center">
-  <img src="https://github.com/YashMarmat/Pages-App-django/blob/master/templates/ecommerce%20%20add%20product%20page.png?raw=true" width="100%">
+  <img width="50%" height="auto" src="https://i.ibb.co/N6WmVdf/explore-posts-page.png">
 </p>
 
 ### User_Inbox
 Just like istagram here you can see your messages (your inbox basically), you can also send a new message to any user present in the application.
 <p align="center">
-  <img src="https://github.com/YashMarmat/Pages-App-django/blob/master/templates/ecommerce%20%20checkout%20page.png?raw=true" width="100%">
+  <img width="50%" height="auto" src="https://i.ibb.co/KhxKCdh/inbox-page.png">
 </p>
 
 ### Your_Profile_Page
 Here you can manage your profile information like your profile picture (which you can update), your posts, followers and the people you are following.
 Also, just like instagram can also visit other peoples profile as well.
 <p align="center">
-  <img src="https://github.com/YashMarmat/Pages-App-django/blob/master/templates/ecommerce%20%20payment%20confirmation%20page.png?raw=true" width="100%">
+  <img width="50%" height="auto" src="https://i.ibb.co/mTNbZcw/user-profile-page.png">
 </p>
 
 ### Login_Page
 <p align="center">
-  <img src="https://github.com/YashMarmat/Pages-App-django/blob/master/templates/ecommerce%20%20payment%20confirmation%20page.png?raw=true" width="100%">
+  <img width="50%" height="auto" src="https://i.ibb.co/F3Vq9SD/login-page.png">
 </p>
 
 ### Sign_up_page
 <p align="center">
-  <img src="https://github.com/YashMarmat/Pages-App-django/blob/master/templates/ecommerce%20%20payment%20confirmation%20page.png?raw=true" width="100%">
+  <img width="50%" height="auto" src="https://i.ibb.co/M81Ppk2/sign-up-page.png">
 </p>
 
 ## Short_Note
