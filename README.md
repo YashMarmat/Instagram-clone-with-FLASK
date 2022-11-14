@@ -70,7 +70,7 @@ Just like istagram here you can see your messages (your inbox basically), you ca
 Here you can manage your profile information like your profile picture (which you can update), your posts, followers and the people you are following.
 Also, just like instagram can also visit other peoples profile as well.
 <p align="center">
-  <img width="50%" height="auto" src="https://i.ibb.co/mTNbZcw/user-profile-page.png">
+  <img width="50%" height="auto" src="https://i.ibb.co/sRkhzKy/edit-profile-page.png">
 </p>
 
 ### Login_Page
