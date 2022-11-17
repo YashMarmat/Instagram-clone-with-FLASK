@@ -4,7 +4,7 @@ A FullStack Instagram App built with Flask and React.
   <img src="https://i.ibb.co/F3Vq9SD/login-page.png" width="45%" height="auto">
 </p>
 
-Checkout the site in action here <a href="https://yash-marmat-projects-instagram.netlify.app/">Deployed App</a>
+Checkout the site in action here <a target="_blank" href="https://yash-marmat-projects-instagram.netlify.app/">Deployed App</a>
 
 # Table of contents
 - [Technologies_and_Tech_stack_involved](#Technologies_and_Tech_stack_involved)
