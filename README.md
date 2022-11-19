@@ -107,7 +107,7 @@ after downloading/cloning the repository code, follow below steps:
 `flask db migrate -m "create tables"`
 
 - upgrade or update your database
-flask db upgrade
+`flask db upgrade`
 
 - run the project
 `flask run`
