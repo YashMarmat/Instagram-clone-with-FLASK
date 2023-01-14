@@ -124,9 +124,11 @@ after downloading/cloning the repository code, follow below steps:
 `Role.insert_roles()`
 
 - confirm roles
+
 `Role.query.all()`
 
 - exit shell
+
 `exit()`
 
 - As your application is entirely new so there is no data in it so go ahead and signup and login to create your new account (i highly recommend to import the json file present in "project_files" directory to ease your work)
