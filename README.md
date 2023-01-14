@@ -133,7 +133,7 @@ after downloading/cloning the repository code, follow below steps:
 
 - As your application is entirely new so there is no data in it so go ahead and signup and login to create your new account (i highly recommend to import the json file present in "project_files" directory to ease your work)
 
-* Note: if the application is not recognizing localhost then use its address instead like this => `http://127.0.0.1:3000/login`, make sure to not include extra slashes "/" at the end of your endpoint or api to avoid not found issues, please use the urls as mentioned in views.
+* Note: if the application is not recognizing localhost then use its address instead like this => `http://127.0.0.1:5000/login`, make sure to not include extra slashes "/" at the end of your endpoint or api to avoid not found issues, please use the urls as mentioned in views.
 
 
 ## All set ! Happy coding :)
